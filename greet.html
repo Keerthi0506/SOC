@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Welcome to JavaScript</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 20px;
+    }
+    h1 {
+      color: black;
+    }
+    input {
+      padding: 5px;
+    }
+    button {
+      padding: 5px 10px;
+      margin-left: 5px;
+    }
+  </style>
+</head>
+<body>
+  <h1>Welcome to JavaScript</h1>
+
+  <!-- Input box -->
+  <input type="text" id="nameInput" placeholder="Enter your name">
+
+  <!-- Buttons -->
+  <button onclick="greetMe()">Greet Me</button>
+  <button onclick="toggleBackground()">Toggle Background</button>
+
+  <!-- Greeting message -->
+  <p id="greeting"></p>
+
+  <!-- External script -->
+  <script src="assets/js/dom.js"></script>
+</body>
+</html>

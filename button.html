@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Add Text Example</title>
+  <style>
+    #container {
+      border: 2px solid black;
+      padding: 10px;
+      width: 250px;
+      min-height: 50px;
+      margin-top: 10px;
+    }
+    button {
+      padding: 8px 12px;
+      margin-top: 5px;
+      cursor: pointer;
+    }
+  </style>
+</head>
+<body>
+  <button id="addBtn">Add Text</button>
+
+  <div id="container"></div>
+
+  <script>
+    const container = document.getElementById("container");
+    const btn = document.getElementById("addBtn");
+
+    btn.addEventListener("click", () => {
+      const newText = document.createElement("p"); 
+      newText.textContent = "My Self is G.Keerthi ";
+      container.appendChild(newText);
+    });
+  </script>
+</body>
+</html>
